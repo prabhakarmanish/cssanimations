@@ -1,0 +1,278 @@
+{
+  "animations": [
+    {
+      "id": "1",
+      "title": "Bouncing Ball",
+      "html": "<div class='bouncing-ball'></div>",
+      "css": ".bouncing-ball { width: 50px; height: 50px; background-color: red; border-radius: 50%; animation: bounce 2s infinite; } @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-50px); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "2",
+      "title": "Fading Text",
+      "html": "<div class='fading-text'>Hello, World!</div>",
+      "css": ".fading-text { animation: fade 3s infinite; } @keyframes fade { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "3",
+      "title": "Sliding Panel",
+      "html": "<div class='sliding-panel'></div>",
+      "css": ".sliding-panel { animation: slide 3s infinite; background-color: blue; width: 100px; height: 100px; } @keyframes slide { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(100px); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "4",
+      "title": "3D Rotating Cube",
+      "html": "<div class='scene'><div class='cube'><div class='face front'>Front</div><div class='face back'>Back</div><div class='face left'>Left</div><div class='face right'>Right</div><div class='face top'>Top</div><div class='face bottom'>Bottom</div></div></div>",
+      "css": "* { margin: 0; padding: 0; box-sizing: border-box; } .scene { width: 200px; height: 200px; perspective: 1000px; } .cube { width: 100%; height: 100%; transform-style: preserve-3d; animation: rotateCube 10s infinite linear; } .face { position: absolute; width: 100%; height: 100%; border: 2px solid rgba(255, 255, 255, 0.3); display: flex; justify-content: center; align-items: center; } @keyframes rotateCube { from { transform: rotateX(-30deg) rotateY(0deg); } to { transform: rotateX(-30deg) rotateY(360deg); } }",
+      "js": "const cube = document.querySelector('.cube'); let mouseX = 0; let mouseY = 0; document.addEventListener('mousemove', (event) => { mouseX = event.clientX / window.innerWidth - 0.5; mouseY = event.clientY / window.innerHeight - 0.5; cube.style.transform = `rotateX(${mouseY * -180}deg) rotateY(${mouseX * 360}deg)`; });"
+    },
+    {
+      "id": "5",
+      "title": "Color Changing Circle",
+      "html": "<div class='color-circle'></div>",
+      "css": ".color-circle { width: 100px; height: 100px; background-color: red; border-radius: 50%; animation: colorChange 3s infinite; } @keyframes colorChange { 0% { background-color: red; } 50% { background-color: blue; } 100% { background-color: green; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "6",
+      "title": "Pulsing Circle",
+      "html": "<div class='pulsing-circle'></div>",
+      "css": ".pulsing-circle { width: 100px; height: 100px; background-color: purple; border-radius: 50%; animation: pulse 1.5s infinite; } @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.2); } 100% { transform: scale(1); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "7",
+      "title": "Wavy Text",
+      "html": "<div class='wavy-text'>Wavy Text Animation</div>",
+      "css": ".wavy-text { font-size: 40px; font-weight: bold; color: #3498db; animation: wave 3s infinite; } @keyframes wave { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "8",
+      "title": "Spinning Loader",
+      "html": "<div class='spinner'></div>",
+      "css": ".spinner { border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 2s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "9",
+      "title": "Falling Leaves",
+      "html": "<div class='falling-leaves'></div>",
+      "css": ".falling-leaves { position: relative; width: 100px; height: 100px; } .leaf { position: absolute; width: 20px; height: 20px; background-color: green; animation: fall 5s infinite; } @keyframes fall { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(200px); opacity: 0; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "10",
+      "title": "Bouncing Text",
+      "html": "<div class='bouncing-text'>Bounce Me!</div>",
+      "css": ".bouncing-text { font-size: 40px; font-weight: bold; animation: bounceText 2s infinite; } @keyframes bounceText { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "11",
+      "title": "Scale Up on Hover",
+      "html": "<div class='scale-up'>Hover over me!</div>",
+      "css": ".scale-up { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; transition: transform 0.3s ease; } .scale-up:hover { transform: scale(1.2); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "12",
+      "title": "Color Change on Hover",
+      "html": "<div class='color-change'>Hover over me!</div>",
+      "css": ".color-change { padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; transition: background-color 0.3s ease; } .color-change:hover { background-color: #e74c3c; }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "13",
+      "title": "Text Shadow on Hover",
+      "html": "<div class='text-shadow'>Hover over me!</div>",
+      "css": ".text-shadow { font-size: 24px; color: #2c3e50; transition: text-shadow 0.3s ease; } .text-shadow:hover { text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "14",
+      "title": "Rotate on Hover",
+      "html": "<div class='rotate'>Hover over me!</div>",
+      "css": ".rotate { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; transition: transform 0.3s ease; } .rotate:hover { transform: rotate(15deg); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "15",
+      "title": "Text Grow on Hover",
+      "html": "<div class='text-grow'>Hover over me!</div>",
+      "css": ".text-grow { font-size: 24px; color: #2c3e50; transition: font-size 0.3s ease; } .text-grow:hover { font-size: 30px; }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "16",
+      "title": "Underline on Hover",
+      "html": "<div class='underline'>Hover over me!</div>",
+      "css": ".underline { font-size: 24px; color: #3498db; text-decoration: none; position: relative; } .underline::after { content: ''; position: absolute; left: 0; bottom: -5px; width: 0; height: 2px; background-color: #3498db; transition: width 0.3s ease; } .underline:hover::after { width: 100%; }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "17",
+      "title": "Shadow Grow on Hover",
+      "html": "<div class='shadow-grow'>Hover over me!</div>",
+      "css": ".shadow-grow { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; transition: box-shadow 0.3s ease; } .shadow-grow:hover { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "18",
+      "title": "Bounce on Hover",
+      "html": "<div class='bounce'>Hover over me!</div>",
+      "css": ".bounce { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; animation: none; transition: transform 0.3s ease; } .bounce:hover { animation: bounce 0.5s ease; } @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "19",
+      "title": "Slide from Left on Hover",
+      "html": "<div class='slide-left'>Hover over me!</div>",
+      "css": ".slide-left { display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-align: center; border-radius: 5px; transform: translateX(-100%); transition: transform 0.3s ease; } .slide-left:hover { transform: translateX(0); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "20",
+      "title": "Text Color Change on Hover",
+      "html": "<div class='text-color-change'>Hover over me!</div>",
+      "css": ".text-color-change { font-size: 24px; color: #3498db; transition: color 0.3s ease; } .text-color-change:hover { color: #e74c3c; }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "21",
+      "title": "3D Rotating Cube",
+      "html": "<div class='cube-container'><div class='cube'><div class='face front'>Front</div><div class='face back'>Back</div><div class='face left'>Left</div><div class='face right'>Right</div><div class='face top'>Top</div><div class='face bottom'>Bottom</div></div></div>",
+      "css": ".cube-container { perspective: 600px; } .cube { width: 200px; height: 200px; transform-style: preserve-3d; animation: rotateCube 5s infinite linear; position: relative; } .face { position: absolute; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ccc; display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; color: #333; } .front { transform: rotateY(0deg) translateZ(100px); } .back { transform: rotateY(180deg) translateZ(100px); } .left { transform: rotateY(-90deg) translateZ(100px); } .right { transform: rotateY(90deg) translateZ(100px); } .top { transform: rotateX(90deg) translateZ(100px); } .bottom { transform: rotateX(-90deg) translateZ(100px); } @keyframes rotateCube { from { transform: rotateX(0deg) rotateY(0deg); } to { transform: rotateX(360deg) rotateY(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "22",
+      "title": "3D Spinning Pyramid",
+      "html": "<div class='pyramid-container'><div class='pyramid'></div></div>",
+      "css": ".pyramid-container { perspective: 600px; } .pyramid { width: 200px; height: 200px; position: relative; animation: rotatePyramid 6s infinite linear; transform-style: preserve-3d; } .pyramid::before, .pyramid::after, .pyramid div { content: ''; position: absolute; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ccc; } .pyramid::before { transform: rotateY(45deg) translateZ(100px); } .pyramid::after { transform: rotateX(45deg) translateZ(100px); } .pyramid div { transform: rotateY(90deg) translateZ(100px); } @keyframes rotatePyramid { from { transform: rotateY(0deg) rotateX(0deg); } to { transform: rotateY(360deg) rotateX(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "23",
+      "title": "3D Card Flip",
+      "html": "<div class='card-container'><div class='card'><div class='card-front'>Front</div><div class='card-back'>Back</div></div></div>",
+      "css": ".card-container { perspective: 1000px; } .card { width: 200px; height: 300px; transform-style: preserve-3d; transition: transform 1s; } .card:hover { transform: rotateY(180deg); } .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; justify-content: center; align-items: center; font-size: 24px; font-weight: bold; color: white; } .card-front { background-color: #3498db; } .card-back { background-color: #e74c3c; transform: rotateY(180deg); }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "24",
+      "title": "3D Rotating Sphere",
+      "html": "<div class='sphere'></div>",
+      "css": ".sphere { width: 200px; height: 200px; background-color: #3498db; border-radius: 50%; animation: rotateSphere 5s infinite linear; position: relative; transform-style: preserve-3d; } @keyframes rotateSphere { from { transform: rotateX(0deg) rotateY(0deg); } to { transform: rotateX(360deg) rotateY(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "25",
+      "title": "3D Orbiting Circles",
+      "html": "<div class='orbiting-circles'></div>",
+      "css": ".orbiting-circles { width: 300px; height: 300px; position: relative; animation: rotateOrbit 6s infinite linear; } .orbiting-circles::before, .orbiting-circles::after { content: ''; position: absolute; width: 60px; height: 60px; border-radius: 50%; background-color: #3498db; animation: orbit 6s infinite linear; } .orbiting-circles::before { top: 0; left: 50%; transform: translateX(-50%) translateY(-120px); } .orbiting-circles::after { bottom: 0; left: 50%; transform: translateX(-50%) translateY(120px); } @keyframes rotateOrbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } @keyframes orbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "26",
+      "title": "3D Hovered Cube",
+      "html": "<div class='cube-container'><div class='cube'></div></div>",
+      "css": ".cube-container { perspective: 600px; } .cube { width: 200px; height: 200px; transform-style: preserve-3d; position: relative; } .cube:hover { animation: rotateHoverCube 5s infinite linear; } .face { position: absolute; width: 200px; height: 200px; background-color: rgba(255, 255, 255, 0.8); border: 1px solid #ccc; } .front { transform: rotateY(0deg) translateZ(100px); } .back { transform: rotateY(180deg) translateZ(100px); } .left { transform: rotateY(-90deg) translateZ(100px); } .right { transform: rotateY(90deg) translateZ(100px); } .top { transform: rotateX(90deg) translateZ(100px); } .bottom { transform: rotateX(-90deg) translateZ(100px); } @keyframes rotateHoverCube { from { transform: rotateX(0deg) rotateY(0deg); } to { transform: rotateX(360deg) rotateY(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "27",
+      "title": "3D Wave Effect",
+      "html": "<div class='wave-effect'></div>",
+      "css": ".wave-effect { width: 100%; height: 200px; background: linear-gradient(45deg, #3498db, #e74c3c); animation: wave 5s infinite linear; transform-style: preserve-3d; } @keyframes wave { 0% { transform: rotateX(0deg); } 50% { transform: rotateX(180deg); } 100% { transform: rotateX(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "28",
+      "title": "Spinning Loader",
+      "html": "<div class='spinning-loader'></div>",
+      "css": ".spinning-loader { width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "29",
+      "title": "Pulsing Circle",
+      "html": "<div class='pulsing-circle'></div>",
+      "css": ".pulsing-circle { width: 50px; height: 50px; background-color: #3498db; border-radius: 50%; animation: pulse 2s infinite ease-in-out; } @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: 0.5; } 100% { transform: scale(1); opacity: 1; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "30",
+      "title": "Bouncing Dots",
+      "html": "<div class='bouncing-dots'><div></div><div></div><div></div></div>",
+      "css": ".bouncing-dots { display: flex; justify-content: space-between; align-items: center; width: 60px; } .bouncing-dots div { width: 15px; height: 15px; background-color: #3498db; border-radius: 50%; animation: bounce 1s infinite alternate; } .bouncing-dots div:nth-child(1) { animation-delay: 0s; } .bouncing-dots div:nth-child(2) { animation-delay: 0.2s; } .bouncing-dots div:nth-child(3) { animation-delay: 0.4s; } @keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "31",
+      "title": "Loading Bar",
+      "html": "<div class='loading-bar'></div>",
+      "css": ".loading-bar { width: 100%; height: 10px; background-color: #f3f3f3; border-radius: 5px; overflow: hidden; } .loading-bar::before { content: ''; width: 0; height: 100%; background-color: #3498db; animation: load 3s linear infinite; } @keyframes load { 0% { width: 0; } 50% { width: 100%; } 100% { width: 0; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "32",
+      "title": "Rotating Square",
+      "html": "<div class='rotating-square'></div>",
+      "css": ".rotating-square { width: 50px; height: 50px; background-color: #3498db; animation: rotate 2s linear infinite; } @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "33",
+      "title": "Growing Circle",
+      "html": "<div class='growing-circle'></div>",
+      "css": ".growing-circle { width: 50px; height: 50px; background-color: #3498db; border-radius: 50%; animation: grow 1.5s infinite ease-in-out; } @keyframes grow { 0% { transform: scale(1); } 50% { transform: scale(1.5); } 100% { transform: scale(1); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "34",
+      "title": "Fading Squares",
+      "html": "<div class='fading-squares'></div>",
+      "css": ".fading-squares { display: flex; justify-content: space-between; width: 60px; } .fading-squares div { width: 15px; height: 15px; background-color: #3498db; animation: fade 2s infinite ease-in-out; } .fading-squares div:nth-child(1) { animation-delay: 0s; } .fading-squares div:nth-child(2) { animation-delay: 0.2s; } .fading-squares div:nth-child(3) { animation-delay: 0.4s; } @keyframes fade { 0% { opacity: 0; } 100% { opacity: 1; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "35",
+      "title": "Zooming Circle",
+      "html": "<div class='zooming-circle'></div>",
+      "css": ".zooming-circle { width: 50px; height: 50px; background-color: #3498db; border-radius: 50%; animation: zoom 1.5s infinite ease-in-out; } @keyframes zoom { 0% { transform: scale(1); } 50% { transform: scale(1.5); } 100% { transform: scale(1); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "36",
+      "title": "Pulsing Squares",
+      "html": "<div class='pulsing-squares'></div>",
+      "css": ".pulsing-squares { display: flex; justify-content: space-between; width: 60px; } .pulsing-squares div { width: 15px; height: 15px; background-color: #3498db; animation: pulse 2s infinite ease-in-out; } .pulsing-squares div:nth-child(1) { animation-delay: 0s; } .pulsing-squares div:nth-child(2) { animation-delay: 0.2s; } .pulsing-squares div:nth-child(3) { animation-delay: 0.4s; } @keyframes pulse { 0% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: 0.5; } 100% { transform: scale(1); opacity: 1; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "37",
+      "title": "Rotating Circle",
+      "html": "<div class='rotating-circle'></div>",
+      "css": ".rotating-circle { width: 50px; height: 50px; border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; animation: rotateCircle 1.5s linear infinite; } @keyframes rotateCircle { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "38",
+      "title": "Growing Bar",
+      "html": "<div class='growing-bar'></div>",
+      "css": ".growing-bar { width: 0; height: 10px; background-color: #3498db; animation: growBar 3s infinite ease-in-out; } @keyframes growBar { 0% { width: 0; } 50% { width: 100%; } 100% { width: 0; } }",
+      "js": "No JavaScript required for this animation."
+    },
+    {
+      "id": "39",
+      "title": "Heartbeat Pulse",
+      "html": "<div class='heartbeat'></div>",
+      "css": ".heartbeat { width: 50px; height: 50px; background-color: #3498db; border-radius: 50%; animation: heartbeat 1.2s infinite; } @keyframes heartbeat { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }",
+      "js": "No JavaScript required for this animation."
+    }
+  ]
+}
+
